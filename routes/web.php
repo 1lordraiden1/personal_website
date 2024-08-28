@@ -10,6 +10,7 @@ use App\Models\Job;
 
 
 Route::get('/', function () {
+
     return view('home');
 });
 
