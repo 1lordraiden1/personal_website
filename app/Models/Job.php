@@ -31,4 +31,9 @@ class Job extends Model
     {
         return $this->belongsTo(Employer::class);
     }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class, foreignPivotKey: 'job_listing_id');  // Foreing pivot key is what is the Parent table ( Job ) and used to get the small one 
+    }
 }

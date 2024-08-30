@@ -13,4 +13,9 @@ class Employer extends Model
     {
         return $this->hasMany(Job::class);
     }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }
