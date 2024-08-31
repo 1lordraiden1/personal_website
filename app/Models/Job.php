@@ -9,7 +9,9 @@ use Illuminate\Support\Arr;
 class Job extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'salary'];
+    //protected $fillable = ['title', 'salary', 'employer_id'];
+
+    protected $guarded = [];
     protected $table = "job_listings";
 
 
